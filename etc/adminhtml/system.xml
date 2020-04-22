@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ws_tab" translate="label" sortOrder="110">
+            <label>WS Extensions</label>
+        </tab>
+        <section id="ws_tagmanager" translate="label" type="text" sortOrder="8888" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Google Tag Manager</label>
+            <tab>ws_tab</tab>
+            <resource>Ws_Tagmanager::options</resource>
+            <group id="ws_tm" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Google Tag Manager Configuration</label>
+                <field id="ws_tm_enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Tag Manager</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes or NO</comment>
+                </field>
+                <field id="ws_tm_header" translate="label comment" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Header </label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Insert Google Tag Manager header code</comment>
+                </field>
+                <field id="ws_tm_body" translate="label comment" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Body</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Insert Google Tag Manager body code</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

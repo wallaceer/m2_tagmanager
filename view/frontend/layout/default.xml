@@ -10,11 +10,11 @@
     <body>
 
         <referenceContainer name="head.additional">
-            <block class="Magento\Framework\View\Element\Template" name="gtm.head" before="-" template="Magento_Theme::gtm_head.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="gtm_head" before="-" template="Ws_Tagmanager::gtm_head.phtml" ifconfig="ws_tagmanager/ws_tm/ws_tm_enable" />
         </referenceContainer>
 
         <referenceContainer name="after.body.start">
-            <block class="Magento\Framework\View\Element\Template" name="gtm.body" before="-" template="Magento_Theme::gtm_body.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="gtm_body" before="-" template="Ws_Tagmanager::gtm_body.phtml" ifconfig="ws_tagmanager/ws_tm/ws_tm_enable" />
         </referenceContainer>
 
     </body>
